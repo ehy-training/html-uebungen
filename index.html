@@ -1,4 +1,4 @@
-<!--Version: 1.4-->
+<!--Version: 1.5-->
 <!DOCTYPE html>
 <html lang="de">
 
@@ -7,46 +7,57 @@
     <title>HTML Übungen</title>
 </head>
 
-<body>
+<body style="margin:0">
 
-    <header>
+    <header style="
+       background:grey;
+       color:#fff;
+       ">
+       
         <!--Header-->
-        <h1>HTML Übungen</h1>
+        <h1 style="
+        padding: 20px;
+        margin: 0;
+        ">HTML Übungen</h1>
 
         <figure>
             <img src="assets/img/james-harrison-vpOeXr5wmR4-unsplash.jpg" width="100%" alt="Eine Fotografie eines Laptops mit Webcode auf dem Bildschirm. Daneben ein Kaktus.">
         </figure>
-        <hr>
+
     </header>
 
     <nav>
-        <ul>
-            <li><a href="meine-erste-webseite.html">Meine erste HTML Seite</a></li>
+        <ul style="
+           list-style-type: none;
+           display: flex;
+           gap: 1em;
+           ">
+            <li><a href="meine-erste-webseite.html" style="text-decoration: none">Meine erste HTML Seite</a></li>
             <li><a href="mein-steckbrief.html">Mein Steckbrief</a></li>
             <li><a href="listen.html">HTML Listen</a></li>
         </ul>
         <hr>
     </nav>
 
-    <div>
-        <!--Wrapper um die Inhaltsbereiche-->
+    <div style="margin: 0 20px">
+        <!--Wrapper um die unteren Bereiche der Seite-->
 
-        <main>
+        <main style="color:green">
             <!--Hauptinhaltsbereich-->
-            <h2><a href="meine-erste-webseite.html">Meine erste HTML Seite</a></h2>
+            <h2><a href="meine-erste-webseite.html" style="color:green">Meine erste HTML Seite</a></h2>
             <p>Die erste
-             
-            <span 
-            style="
+
+                <span style="
+            font-family: Arial;
             font-weight:bold;
             font-size:1.2em;
             color:red;
             background:orange;
-            padding: 5px;
-            "
-            >
-            
-            Übung in unserem HTML</span> Einführungskurs</p>
+            padding:5px;
+            ">
+
+                    Übung in unserem HTML</span> Einführungskurs
+            </p>
 
             <h2><a href="mein-steckbrief.html">Mein Steckbrief</a></h2>
             <p>Die erste <strong><em>Übung</em></strong>, die völlig selbstständig (gewissermaßen als "Hausaufgabe") durchgeführt wurde.</p>
@@ -63,11 +74,13 @@
             </p>
         </aside>
         <hr>
-    </div>
 
-    <footer>
-        <!--Footer-->
-        <p>&copy; 2024 Enno Hyttrek</p>
-    </footer>
+
+        <footer style="padding-top: 100px">
+            <!--Footer-->
+            <p>&copy; 2024 Enno Hyttrek</p>
+        </footer>
+
+    </div>
 
 </body></html>
