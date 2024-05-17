@@ -5,12 +5,30 @@
 <head>
     <meta charset="utf8">
     <title>HTML Übungen</title>
+    
+    <!--
+    Es gibt die Möglichkeit, die in den Style Attributen eingegebenen Eigenschaften und Werte auch an übergeordneter Stelle anzuwenden. Das ist dann im Prinzip schon das, was wir CSS nennen: Cascading Style Sheets. Ein einfacher Weg ist, im HEAD Element ein STYLE Element einzufügen. Innerhalb dieses STYLE Elements kann dann CSS Code geschrieben werden. Man nennt das ein lokales Stylesheet. Im untenstehenden Beispiel wird damit dafür gesorgt, dass die Hyperlinks im Menü keine Unterstreichung mehr haben und die Hyperlinks im MAIN die Schriftfarbe Grün annehmen.
+    Dies nur zur Referenz für die nächsten Schritte. Im Unterricht konnte ich diesen Punkt aus Zeitrgünden nicht mehr erklären.
+    EHy
+    -->
+    <style>
+        
+        nav a {
+            text-decoration: none;
+        }
+    
+        main a {
+            color: green;
+        }    
+    
+    
+    </style>
 </head>
 
 <body style="margin:0">
 
     <header style="
-       background:grey;
+       background:hsl(200,20%,50%);
        color:#fff;
        ">
        
@@ -21,7 +39,10 @@
         ">HTML Übungen</h1>
 
         <figure>
-            <img src="assets/img/james-harrison-vpOeXr5wmR4-unsplash.jpg" width="100%" alt="Eine Fotografie eines Laptops mit Webcode auf dem Bildschirm. Daneben ein Kaktus.">
+            <img 
+            src="assets/img/james-harrison-vpOeXr5wmR4-unsplash.jpg" 
+            width="100%" 
+            alt="Eine Fotografie eines Laptops mit Webcode auf dem Bildschirm. Daneben ein Kaktus.">
         </figure>
 
     </header>
@@ -32,7 +53,7 @@
            display: flex;
            gap: 1em;
            ">
-            <li><a href="meine-erste-webseite.html" style="text-decoration: none">Meine erste HTML Seite</a></li>
+            <li><a href="meine-erste-webseite.html">Meine erste HTML Seite</a></li>
             <li><a href="mein-steckbrief.html">Mein Steckbrief</a></li>
             <li><a href="listen.html">HTML Listen</a></li>
         </ul>
@@ -44,7 +65,7 @@
 
         <main style="color:green">
             <!--Hauptinhaltsbereich-->
-            <h2><a href="meine-erste-webseite.html" style="color:green">Meine erste HTML Seite</a></h2>
+            <h2><a href="meine-erste-webseite.html">Meine erste HTML Seite</a></h2>
             <p>Die erste
 
                 <span style="
