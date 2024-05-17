@@ -12,6 +12,6 @@ Enno Hyttrek,
 Mai 2024
 
 ---
-Version: 1.1
+Version: 1.2
 
 https://ennohyttrek.de
